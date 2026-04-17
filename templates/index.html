@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weight Predictor</title>
+</head>
+<body>
+    <h2>Height to Weight Predictor</h2>
+
+    <form method="POST">
+        <input type="number" name="height" placeholder="Enter height (cm)" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Weight: {{ prediction }} kg</h3>
+    {% endif %}
+</body>
+</html>
